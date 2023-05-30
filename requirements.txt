@@ -1,7 +1,7 @@
-matplotlib==3.5.2
-mlxtend==0.20.0
+matplotlib
+mlxtend
 numpy
 pandas
 Pillow
 seaborn
-streamlit==1.10.0
+streamlit
