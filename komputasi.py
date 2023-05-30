@@ -31,7 +31,7 @@ def dataset_settings(df, pembeli, tanggal, produk):
     if by_year != 'Semua':
         df = df[df['Tahun'] == int(by_year)]
         by_month = c2.slider('Bulan', 1, 12, (1, 12))
-        df = df[df['Bulan'].between(by_month[0], by_month[1], inclusive=True)]
+        df = df[df['Bulan'].between(int(by_month[0]), int(by_month[1]), inclusive=True)]
     return df
 
 def show_transaction_info(df, produk, pembeli):
